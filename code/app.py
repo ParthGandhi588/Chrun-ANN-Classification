@@ -6,16 +6,16 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-model = tf.keras.models.load_model('models/model.h5')
+model = tf.keras.models.load_model("D:\\Udemy Course\\NLP & Deep Learning\\ANN Classification\\models\\model.h5")
 
 # Load the scaler pickle
-scaler = pickle.load(open('models/scaler.pkl', 'rb'))
+scaler = pickle.load(open("D:\\Udemy Course\\NLP & Deep Learning\\ANN Classification\\models\\scaler.pkl", 'rb'))
 
 # Load the label encoder pickle
-label_encoder_gender = pickle.load(open('mode/label_encoder_gender.pkl', 'rb'))
+label_encoder_gender = pickle.load(open("D:\\Udemy Course\\NLP & Deep Learning\\ANN Classification\\models\\label_encoder_gender.pkl", 'rb'))
 
 # Load the onehot encoder pickle
-onehot_encoder_geo = pickle.load(open('model/onehot_encoder_geo.pkl', 'rb'))
+onehot_encoder_geo = pickle.load(open("D:\\Udemy Course\\NLP & Deep Learning\\ANN Classification\\models\\onehot_encoder_geo.pkl", 'rb'))
 
 # Stramlit app
 st.title("Customer Churn Prediction")
